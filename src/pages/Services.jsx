@@ -1,9 +1,13 @@
 import React from 'react'
 import Servimg from '../assets/about.jpg'
 
-import Airbnb from '../assets/serv1.jpeg'
+import Airbnb from '../assets/serv3.jpg'
 import Resident from '../assets/serv2.webp'
 import Comm from '../assets/serv3.jpg'
+import MovInOt from '../assets/serv7.jpg'
+import Commercial from '../assets/serv1.jpeg'
+import Appartment from '../assets/serv6.jpg'
+import Pconstruction from '../assets/serv5.jpg'
 
 import { FaHome } from "react-icons/fa";
 import { BsBuildingsFill } from "react-icons/bs";
@@ -13,6 +17,7 @@ import ContImg from '../assets/contact.webp'
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import { Link } from 'react-router-dom'
+import { BOOKING_FORM_URL } from '../services/Helpers'
 
 const stripePromise = loadStripe('pk_test_51PZIArG5MT11KApvXJgAFIKzv4iLzN2ca8IGOPmcwUQ8je8kiuUmqWEJKlWYP3D8CYUHfPKvr1uNswIav8LyAATs00f6EMku9m');
 
@@ -52,9 +57,14 @@ const ServiceCard = ({ data }) => {
                     Book Now
                 </button> */}
 
-                <Link to='/cost-calculator' className=' mx-20 bg-[#00369a] text-white py-3 rounded-lg hover:bg-[#002a78] transition duration-300 ease-in-out text-center'>
+                {/* <Link to='/cost-calculator' className='bg-[#00369a] text-white py-3 rounded-lg hover:bg-[#002a78] transition duration-300 ease-in-out text-center'>
                     Book Now
-                </Link>
+                </Link> */}
+
+                <a href={BOOKING_FORM_URL} target='_blank' className='bg-[#00369a] text-white py-3 rounded-lg hover:bg-[#002a78] transition duration-300 ease-in-out text-center'>
+                    Book Now
+                </a>
+
             </div>
         </div>
     )
@@ -81,7 +91,7 @@ const Services = () => {
         },
         {
             id: 3,
-            img: Comm,
+            img: Commercial,
             title: 'Commercial Cleaning Services',
             description: 'We provide reliable cleaning services for offices, retail spaces, and other commercial properties, ensuring a clean and hygienic workspace for your employees and customers.',
             priceID: "price_1Q3GwrG5MT11KApvbEfCM46J",
@@ -89,7 +99,7 @@ const Services = () => {
         },
         {
             id: 4,
-            img: Resident,
+            img: Pconstruction,
             title: 'Post-Construction Cleaning',
             description: 'Our post-construction cleaning service removes dust, debris, and other materials after construction, ensuring your newly built or renovated space is spotless and ready for use.',
             priceID: "price_1Q3GwrG5MT11KApvbEfCM46J",
@@ -97,7 +107,7 @@ const Services = () => {
         },
         {
             id: 5,
-            img: Resident,
+            img: MovInOt,
             title: 'Move-In/Move-Out Cleaning',
             description: 'Moving is stressful enough without worrying about cleaning. Our move-in/move-out cleaning service ensures your old or new home is spotless and ready for the next stage.',
             priceID: "price_1Q3GwrG5MT11KApvbEfCM46J",
@@ -105,7 +115,7 @@ const Services = () => {
         },
         {
             id: 6,
-            img: Resident,
+            img: Appartment,
             title: 'Apartment Cleaning Services',
             description: 'Our apartment cleaning service offers both regular cleaning and deep cleaning options. We ensure your apartment stays fresh, clean, and inviting for you and your guests.',
             priceID: "price_1Q3GwrG5MT11KApvbEfCM46J",

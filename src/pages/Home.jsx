@@ -24,8 +24,8 @@ const Home = () => {
     const ReasonsData = [
         {
             icon: LuBadgeCheck,
-            title: 'Expert Cleaning Services',
-            details: 'We have more than 2M+ people trusted our services'
+            title: 'Licensed, Insured and Bonded',
+            details: 'All our professionals are licensed and insured to ensure quality service.'
         },
         {
             icon: MdCleaningServices,
@@ -83,7 +83,7 @@ const Home = () => {
                 <div className='flex flex-col gap-5 justify-center z-10'>
                     <div className='flex flex-col gap-5'>
                         <p className='text-5xl md:w-[50%] font-bold flex gap-3'>
-                            Welcome To El-pro Cleaning Services
+                            Welcome To EL-Pro Cleaning Services
                         </p>
                         <p className='lg:text-l md:w-[40%] '>
                             Our team of professional cleaners is committed to delivering a pristine and spotless environment for your home or business.
@@ -130,7 +130,7 @@ const Home = () => {
 
             </section>
 
-            <section className='lg:mx-10 flex flex-col px-5 lg:px-24'>
+            <section className='flex flex-col px-5 lg:px-24'>
 
                 <div className='text-3xl text-center md:text-5xl mt-20 mb-20 font-bold mx-auto'>
                     Our Services Include

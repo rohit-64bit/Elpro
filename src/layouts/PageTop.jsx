@@ -23,7 +23,7 @@ const PageTop = () => {
     ];
 
     return (
-        <header className='flex flex-col xl:flex-row justify-between items-center py-5 px-5 xl:px-28'>
+        <header className='flex flex-col xl:flex-row justify-between bg-white items-center py-5 px-5 xl:px-28'>
 
             <img src={Logo} alt="" className='w-32' />
 

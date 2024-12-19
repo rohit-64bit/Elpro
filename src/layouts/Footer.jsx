@@ -47,15 +47,15 @@ const Footer = () => {
                 },
                 {
                     name: 'Yelp',
-                    link: 'https://www.yelp.com/biz/el-pro-cleaning-services-laurelton-2'
+                    link: 'https://www.yelp.com/biz/EL-Pro-cleaning-services-laurelton-2'
                 },
                 {
                     name: 'LinkedIn',
-                    link: 'https://www.linkedin.com/company/el-pro-cleaning-services/'
+                    link: 'https://www.linkedin.com/company/EL-Pro-cleaning-services/'
                 },
                 {
                     name: 'Mapquest',
-                    link: 'https://www.mapquest.com/us/new-york/el-pro-cleaning-services-453963906'
+                    link: 'https://www.mapquest.com/us/new-york/EL-Pro-cleaning-services-453963906'
                 }
             ]
         },
@@ -76,7 +76,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className='px-5 md:px-20 py-24 bg-slate-300 flex'>
+            <footer className='px-5 md:px-20 py-24 bg-slate-300 flex flex-col md:flex-row justify-between gap-10'>
 
                 <div className='flex flex-col md:flex-row gap-10 text-black'>
                     {footerData.map((data, index) => {
@@ -102,10 +102,14 @@ const Footer = () => {
                     })}
                 </div>
 
+                <p className='text-lg'>
+                    We are listed in b2blistings.org's <a className='text-blue-600 underline underline-offset-2' href="https://www.b2blistings.org/Cleaning-Services/C44-1-0.htm">Cleaning Services Directory</a>
+                </p>
+
             </footer>
             <footer>
                 <div className='bg-[#004AAD] text-white/50 py-5 text-sm font-bold text-center'>
-                    <p>© 2024 El-pro. All Rights Reserved</p>
+                    <p>© 2024 EL-Pro. All Rights Reserved</p>
                 </div>
             </footer>
         </>

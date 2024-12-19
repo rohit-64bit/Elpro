@@ -1,0 +1,2 @@
+export const BOOKING_FORM_URL = 'https://clienthub.getjobber.com/booking/8b18ec8a-db03-42ed-9f5e-6bf41f075457'
+export const CONTACT_FORM_URL = 'https://clienthub.getjobber.com/client_hubs/8ad1a45e-83d1-4adf-9548-111e3c65e623/public/work_request/new'
